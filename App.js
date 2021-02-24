@@ -1,8 +1,8 @@
 import React from 'react';
-import HomePage from './screens/HomePage';
+import AppNavigator from './navigations/AppNavigator';
 
 export default function App() {
   return (
-    <HomePage />
+    <AppNavigator />
   );
 }

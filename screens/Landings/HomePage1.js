@@ -1,12 +1,12 @@
 import React from 'react'
 import { View, Text, StyleSheet, StatusBar } from 'react-native'
 import { Ionicons, AntDesign } from '@expo/vector-icons';
-import Colors from '../constants/Colors'
+import Colors from '../../constants/Colors'
 
 const AppBar = props => {
   return (
     <View style={styles.appbar}>
-        <Ionicons name="chevron-back" size={24} color="white" />
+        <Ionicons name="chevron-back" size={24} color="white" onPress={props.onClickBack} />
         <Ionicons name="md-notifications-outline" size={24} color="white" />
     </View>
   )
@@ -48,12 +48,11 @@ const TransactionCard = props => {
   )
 }
 
-const HomePage = props => {
+const HomePage1 = props => {
   return (
     <View style={styles.screen}>
-      <StatusBar hidden />
       <View style={styles.container}>
-        <AppBar />
+        <AppBar onClickBack = {()=>props.navigation.goBack()} />
         <Text style={styles.balanceHeading}>Your Balance</Text>
         <Text style={styles.balance}>$547000.00</Text>
         <View style={styles.typeCards}>
@@ -173,4 +172,4 @@ const styles = StyleSheet.create({
   },
 })
 
-export default HomePage;
+export default HomePage1;
