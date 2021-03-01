@@ -1,6 +1,6 @@
 import React from 'react'
 import { View, Text, StyleSheet, Dimensions } from 'react-native'
-import Routes from '../../constants/routes'
+import Routes from '../../navigations/routes'
 import { List, Menu } from 'react-native-paper';
 
 const UIScreen = props => {

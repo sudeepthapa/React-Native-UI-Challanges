@@ -1,14 +1,14 @@
+import FoodHomeScreen from "../screens/ecommerce/food_home_ui"
 import HomePage1 from "../screens/Landings/HomePage1"
-import ProfileScreen1 from "../screens/profiles/ProfileScreen1"
 
 const Routes = [
   {
-    title: 'Profile Screens',
+    title: 'E-Commerce',
     routes: [
       {
-        title: "Profile Screen 1",
-        route: 'ProfileScreen1',
-        component: ProfileScreen1,
+        title: "Food HomeScreen ",
+        route: 'FoodHomeScreen1',
+        component: FoodHomeScreen,
       }
     ]
     

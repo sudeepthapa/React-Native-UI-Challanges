@@ -5,7 +5,7 @@ import {createStackNavigator } from '@react-navigation/stack'
 import IntroScreen from '../screens/core/IntroScreen';
 import UIScreen from '../screens/core/UIScreen';
 import AboutScreen from '../screens/core/AboutScreen';
-import Routes from '../constants/routes';
+import Routes from './routes';
 
 const Stack = createStackNavigator();
 
