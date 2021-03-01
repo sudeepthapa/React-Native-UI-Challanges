@@ -18,7 +18,7 @@ const FoodHomeScreen = props => {
       <Categories />
       <Title>Popular</Title>
       <Populars />
-      <Title>Popular</Title>
+      <Title>Latest</Title>
       <Populars />
     </View>
   </ScrollView>
