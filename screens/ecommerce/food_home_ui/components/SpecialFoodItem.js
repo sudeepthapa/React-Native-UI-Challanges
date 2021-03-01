@@ -4,6 +4,7 @@ import Title from './Title';
 import {Ionicons} from '@expo/vector-icons'
 import COLORS from '../constants/colors';
 import { useNavigation } from '@react-navigation/native';
+import Toast from '../../../../components/common/Toast';
 
 const SpecialFoodItem = ({ food }) => {
   const totalRating = new Array(5).fill(1);
@@ -14,7 +15,7 @@ const SpecialFoodItem = ({ food }) => {
         <Ionicons name="heart" size={24} color={COLORS.primary} />
       </View>                       
     </ImageBackground>
-    <Pressable onPress={() => navigation.navigate('Detail',{title: food.title, foodId: food.foodId} ) }>
+    <Pressable onPress={() => Toast.showToastWithGravity(food.title) }>
       <Title containerStyle={{ paddingHorizontal: 0, paddingTop: 8, paddingBottom:0 }}> {food.title} </Title>
       <Text style={styles.subtitle}>{food.subtitle}</Text>
       <View style={styles.priceSection}>
